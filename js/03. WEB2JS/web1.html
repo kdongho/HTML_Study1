@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <!-- UTF-8을 사용하도록 Head단에서 선언해줘야함 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            WEB-CSS
+        </title>
+        <style>
+            body {
+                margin: 0px;
+            }
+            h1 {
+                font-size: 100px;
+                text-align: center;
+                text-decoration: none;
+                border-bottom: 1px black solid;
+                margin: 0px;
+                padding: 20px;
+            }
+            ol {
+                border-right: 1px solid black;
+                margin: 0px;
+                width: 10%;
+                padding: 20px;
+            }
+            a {
+                color: purple;
+                text-decoration: none;
+            }
+            .saw {
+                color: gray;
+            }
+            #active {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1><a href="index.html">WEB</a></h1>
+        <ol>
+            <li>
+                <a href="web1.html" class="saw">HTML</a>
+            </li>
+            <li>
+                <a href="web2.html" class="saw" id="active">CSS</a>
+                <!-- id는 단 한번만 존재해야함. -->
+            </li>
+            <li>
+                <a href="web3.html">JavaScript</a>
+            </li>
+        </ol>
+
+        <!-- <ol class="nav_container">
+            <li class="nav-item">
+                <a href="web1.html"><font color="red">HMTL</font> </a>
+            </li>
+            <li class="nav-item">
+                <a href="web2.html"><font color="red">CSS</font> </a>
+            </li>
+            <li class="nav-item">
+                <a href="web3.html"><font color="red">Javascript</font> </a>
+            </li>
+        </ol> -->
+
+        <h2>
+            HTML
+        </h2>
+        <a href="https://www.w3.org/TR/2011/WD-html5-20110405/">
+            <!-- href는 hyperlink reference 라고 불림 -->
+            Hypertext Markup Language (HTML)</a
+        >
+        is the standard markup language for
+        <strong
+            >creating
+            <u>web</u>
+            pages</strong
+        >
+        <p>
+            <iframe
+                src="https://www.youtube.com/embed/7T7r_oSp0SE"
+                frameborder="0"
+                width="560"
+                height="315"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+            ></iframe>
+        </p>
+        <iframe src="https://youtu.be/7T7r_oSp0SE" frameborder="0"></iframe>
+        <img src="robot.jpg" width="100%" />
+
+        and web applications.Web browsers receive HTML documents from a web
+        server or from local storage and render them into multimedia web pages.
+        HTML describes the structure of a web page semantically and originally
+        included cues for the appearance of the document.<br /><br />HTML
+        elements are the building blocks of HTML pages. With HTML constructs,
+        images and other objects, such as interactive forms, may be embedded
+        into the rendered page. It provides a means to create structured
+        documents by denoting structural semantics for text such as headings,
+        paragraphs, lists, links, quotes and other items. HTML elements are
+        delineated by tags, written using angle brackets.
+
+        <div id="disqus_thread"></div>
+        <script>
+            /**
+             *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+             *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() {
+                // DON'T EDIT BELOW THIS LINE
+                var d = document,
+                    s = d.createElement("script");
+                s.src = "https://blabla-8.disqus.com/embed.js";
+                s.setAttribute("data-timestamp", +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript
+            >Please enable JavaScript to view the
+            <a href="https://disqus.com/?ref_noscript"
+                >comments powered by Disqus.</a
+            ></noscript
+        >
+
+        <p>
+            <!--Start of Tawk.to Script-->
+            <script type="text/javascript">
+                var Tawk_API = Tawk_API || {},
+                    Tawk_LoadStart = new Date();
+                (function() {
+                    var s1 = document.createElement("script"),
+                        s0 = document.getElementsByTagName("script")[0];
+                    s1.async = true;
+                    s1.src =
+                        "https://embed.tawk.to/5e5db3f46d48ff250ad8ef89/default";
+                    s1.charset = "UTF-8";
+                    s1.setAttribute("crossorigin", "*");
+                    s0.parentNode.insertBefore(s1, s0);
+                })();
+            </script>
+            <!--End of Tawk.to Script-->
+        </p>
+    </body>
+</html>

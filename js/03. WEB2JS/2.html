@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- UTF-8을 사용하도록 Head단에서 선언해줘야함 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      WEB-CSS
+    </title>
+    <style>
+      body {
+        margin: 0px;
+      }
+      h1 {
+        font-size: 100px;
+        text-align: center;
+        text-decoration: none;
+        border-bottom: 1px black solid;
+        margin: 0px;
+        padding: 20px;
+      }
+      ol {
+        border-right: 1px solid black;
+        margin: 0px;
+        width: 100;
+        padding: 20px;
+      }
+      a {
+        color: purple;
+        text-decoration: none;
+      }
+      #active {
+        color: red;
+      }
+
+      #grid {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+      }
+      #grid ol {
+        padding-left: 33px;
+      }
+      #grid #article {
+        padding-left: 25px;
+      }
+
+      @media (max-width: 800px) {
+        #grid {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body style="background-color: black; color:white;">
+    <h1><a href="index.html">WEB</a></h1>
+    <div id="grid">
+      <ol>
+        <li>
+          <a href="web1.html">HTML</a>
+        </li>
+        <li>
+          <a href="web2.html" id="active">CSS</a>
+          <!-- id는 단 한번만 존재해야함. -->
+        </li>
+        <li>
+          <a href="web3.html">JavaScript</a>
+        </li>
+      </ol>
+      <div id="article">
+        <h2>
+          HTML
+        </h2>
+        <a href="https://www.w3.org/TR/2011/WD-html5-20110405/">
+          <!-- href는 hyperlink reference 라고 불림 -->
+          Hypertext Markup Language (HTML)</a
+        >
+        is the standard markup language for and web applications.Web browsers
+        receive HTML documents from a web server or from local storage and
+        render them into multimedia web pages. HTML describes the structure of a
+        web page semantically and originally included cues for the appearance of
+        the document.<br /><br />HTML elements are the building blocks of HTML
+        pages. With HTML constructs, images and other objects, such as
+        interactive forms, may be embedded into the rendered page. It provides a
+        means to create structured documents by denoting structural semantics
+        for text such as headings, paragraphs, lists, links, quotes and other
+        items. HTML elements are delineated by tags, written using angle
+        brackets.
+      </div>
+    </div>
+  </body>
+</html>
