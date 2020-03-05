@@ -1,24 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-    </head>
-    <body>
-        <h1>Object</h1>
-        <h2>Create</h2>
-        <script>
-            var coworkers = {
-                front_End: "Fred",
-                back_End: "Dongho"
-            };
-            document.write("Front-End : " + coworkers.front_End + "<br>");
-            document.write("Back-End : " + coworkers.back_End + "<br>");
-            coworkers.bookkeeper = "Alex";
-            document.write("Bookkeeper : " + coworkers.bookkeeper + "<br>");
-            coworkers["data scientist"] = "David";
-            document.write("data scientist : " + coworkers["data scientist"] + "<br>");
-        </script>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Object</h1>
+    <h2>Create</h2>
+    <script>
+      var coworkers = {
+        front_End: "Fred",
+        back_End: "Dongho"
+      };
+      document.write("Front-End : " + coworkers.front_End + "<br>");
+      document.write("Back-End : " + coworkers.back_End + "<br>");
+      coworkers.bookkeeper = "Alex";
+      document.write("Bookkeeper : " + coworkers.bookkeeper + "<br>");
+      coworkers["data scientist"] = "David";
+      document.write(
+        "data scientist : " + coworkers["data scientist"] + "<br>"
+      );
+    </script>
+    <h2>Literate</h2>
+    <script>
+      for (var key in coworkers) {
+        document.write(key + " : " + coworkers[key] + "<br>");
+      }
+      // object의 특정 key의 value를 찾기 위해서는 object[key]를 이용하면 불러올 수 있음!
+    </script>
+
+    <h2>Property & Method</h2>
+    <script>
+      coworkers.showAll = function() {
+        for (var key in this) {
+          document.write(key + " : " + this[key] + "<br>");
+        }
+      };
+      coworkers.showAll();
+      // .showAll = function(){}은 아래와 동일함
+      // function showAll() {}
+      // var showAll = function(){}
+      // var key in this 를 이용하여, 가져오려는 object의 name이 변경되어도 문제없음.
+    </script>
+  </body>
 </html>
