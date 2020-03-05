@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Object</h1>
+        <h2>Create</h2>
+        <script>
+            var coworkers = {
+                front_End: "Fred",
+                back_End: "Dongho"
+            };
+            document.write("Front-End : " + coworkers.front_End + "<br>");
+            document.write("Back-End : " + coworkers.back_End + "<br>");
+            coworkers.bookkeeper = "Alex";
+            document.write("Bookkeeper : " + coworkers.bookkeeper + "<br>");
+            coworkers["data scientist"] = "David";
+            document.write("data scientist : " + coworkers["data scientist"] + "<br>");
+        </script>
+    </body>
+</html>

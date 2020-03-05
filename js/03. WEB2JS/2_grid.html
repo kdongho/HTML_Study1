@@ -22,18 +22,26 @@
             ol {
                 border-right: 1px solid black;
                 margin: 0px;
-                width: 10%;
+                width: 100;
                 padding: 20px;
             }
             a {
                 color: purple;
                 text-decoration: none;
             }
-            .saw {
-                color: gray;
-            }
             #active {
                 color: red;
+            }
+
+            #grid {
+                display: grid;
+                grid-template-columns: 150px 1fr;
+            }
+            #grid ol {
+                padding-left: 33px;
+            }
+            #grid #article {
+                padding-left: 25px;
             }
         </style>
     </head>
@@ -42,65 +50,54 @@
         <div id="grid">
             <ol>
                 <li>
-                    <a href="web1.html" class="saw">HTML</a>
+                    <a href="web1.html">HTML</a>
                 </li>
                 <li>
-                    <a href="web2.html" class="saw" id="active">CSS</a>
+                    <a href="web2.html" id="active">CSS</a>
                     <!-- id는 단 한번만 존재해야함. -->
                 </li>
                 <li>
                     <a href="web3.html">JavaScript</a>
                 </li>
             </ol>
+            <div id="article">
+                <h2>
+                    HTML
+                </h2>
+                <a href="https://www.w3.org/TR/2011/WD-html5-20110405/">
+                    <!-- href는 hyperlink reference 라고 불림 -->
+                    Hypertext Markup Language (HTML)</a
+                >
+                is the standard markup language for
+                <strong
+                    >creating
+                    <u>web</u>
+                    pages</strong
+                >
+                <p>
+                    <iframe
+                        src="https://www.youtube.com/embed/7T7r_oSp0SE"
+                        frameborder="0"
+                        width="560"
+                        height="315"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                    ></iframe>
+                </p>
+                <p><img src="robot.jpg" width="100px" /></p>
 
-            <!-- <ol class="nav_container">
-            <li class="nav-item">
-                <a href="web1.html"><font color="red">HMTL</font> </a>
-            </li>
-            <li class="nav-item">
-                <a href="web2.html"><font color="red">CSS</font> </a>
-            </li>
-            <li class="nav-item">
-                <a href="web3.html"><font color="red">Javascript</font> </a>
-            </li>
-        </ol> -->
-
-            <h2>
-                HTML
-            </h2>
-            <a href="https://www.w3.org/TR/2011/WD-html5-20110405/">
-                <!-- href는 hyperlink reference 라고 불림 -->
-                Hypertext Markup Language (HTML)</a
-            >
-            is the standard markup language for
-            <strong
-                >creating
-                <u>web</u>
-                pages</strong
-            >
-            <p>
-                <iframe
-                    src="https://www.youtube.com/embed/7T7r_oSp0SE"
-                    frameborder="0"
-                    width="560"
-                    height="315"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                ></iframe>
-            </p>
-            <iframe src="https://youtu.be/7T7r_oSp0SE" frameborder="0"></iframe>
-            <img src="robot.jpg" width="100%" />
-
-            and web applications.Web browsers receive HTML documents from a web
-            server or from local storage and render them into multimedia web
-            pages. HTML describes the structure of a web page semantically and
-            originally included cues for the appearance of the document.<br /><br />HTML
-            elements are the building blocks of HTML pages. With HTML
-            constructs, images and other objects, such as interactive forms, may
-            be embedded into the rendered page. It provides a means to create
-            structured documents by denoting structural semantics for text such
-            as headings, paragraphs, lists, links, quotes and other items. HTML
-            elements are delineated by tags, written using angle brackets.
+                and web applications.Web browsers receive HTML documents from a
+                web server or from local storage and render them into multimedia
+                web pages. HTML describes the structure of a web page
+                semantically and originally included cues for the appearance of
+                the document.<br /><br />HTML elements are the building blocks
+                of HTML pages. With HTML constructs, images and other objects,
+                such as interactive forms, may be embedded into the rendered
+                page. It provides a means to create structured documents by
+                denoting structural semantics for text such as headings,
+                paragraphs, lists, links, quotes and other items. HTML elements
+                are delineated by tags, written using angle brackets.
+            </div>
         </div>
 
         <div id="disqus_thread"></div>

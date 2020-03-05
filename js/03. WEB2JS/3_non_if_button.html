@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <!-- UTF-8을 사용하도록 Head단에서 선언해줘야함 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            WEB-CSS
+        </title>
+        <!-- <link rel="stylesheet" type="text/css" href="./2.css" /> -->
+        <style>
+            .js {
+                background-color: blue;
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1><a href="index.html">WEB</a></h1>
+        <div id="grid">
+            <ol>
+                <li>
+                    <a href="web1.html">HTML</a>
+                </li>
+                <li>
+                    <a href="web2.html" id="active">CSS</a>
+                    <!-- id는 단 한번만 존재해야함. -->
+                </li>
+                <li>
+                    <a href="web3.html">JavaScript</a>
+                </li>
+            </ol>
+            <input
+                type="button"
+                value="Night"
+                onclick="
+            document.querySelector('body').style.backgroundColor = 'black'; 
+            document.querySelector('body').style.color = 'white'; 
+            "
+            />
+            <input
+                type="button"
+                value="Day"
+                onclick="
+            document.querySelector('body').style.backgroundColor = 'white'; 
+            document.querySelector('body').style.color = 'black'; "
+            />
+            <input
+                id="night_day"
+                type="button"
+                value="night"
+                onclick="
+            if(document.querySelector('#night_day').value === 'night'){
+            document.querySelector('body').style.backgroundColor = 'black'; 
+            document.querySelector('body').style.color = 'white';
+            document.querySelector('#night_day').value = 'day';
+        }
+            else if(document.querySelector('#night_day').value === 'day'){
+            document.querySelector('body').style.backgroundColor = 'white'; 
+            document.querySelector('body').style.color = 'black';
+            document.querySelector('#night_day').value = 'night';
+        }"
+            />
+            <div id="article">
+                <h2>
+                    HTML
+                </h2>
+                <a href="https://www.w3.org/TR/2011/WD-html5-20110405/">
+                    <!-- href는 hyperlink reference 라고 불림 -->
+                    Hypertext Markup Language (HTML)</a
+                >
+                and web applications.Web browsers receive HTML documents from a web server
+                or from local storage and render them into multimedia web pages. HTML
+                describes the structure of a
+                <span class="js"
+                    >web page semantically and originally included cues for the appearance
+                    of the document.</span
+                >
+                HTML elements are the building blocks of HTML pages. With HTML constructs,
+                images and other objects, such as interactive forms, may be embedded into
+                the rendered page. It provides a means to create structured documents by
+                denoting structural semantics for text such as headings, paragraphs,
+                lists, links, quotes and other items. HTML elements are delineated by
+                tags, written using angle brackets.
+            </div>
+        </div>
+    </body>
+</html>

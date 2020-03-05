@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Function</h1>
+        <h2>Basic</h2>
+        <ul>
+            <script>
+                function two() {
+                    document.write("<ul>2-1</ul>");
+                    document.write("<ul>2-2</ul>");
+                }
+                document.write("<ul>1</ul>");
+                two();
+                document.write("<ul>3</ul>");
+                two();
+            </script>
+        </ul>
+        <h2>Parameter</h2>
+        <script>
+            function sum(x, y) {
+                document.write(x + y + "<br>");
+            }
+            sum(3, 5);
+        </script>
+
+        <h2>Return</h2>
+        <script>
+            function sum2(left, right) {
+                return left + right; // return은 결과를 반환해 준다는 뜻
+            }
+            document.write("<div>" + sum2(3, 5) + "</div>");
+            document.write(
+                "<div style=color:red;>" +
+                    sum2(3, 5) +
+                    "</div>"
+            );
+            document.write(
+                "<div style=font-size:3em;>" +
+                    sum2(3, 5) +
+                    "</div>"
+            );
+        </script>
+    </body>
+</html>
